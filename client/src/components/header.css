@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    position: sticky; /* Keeps the header at the top when scrolling */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    flex: 1; /* Fills the available space between logo and login */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.header-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.header-logo .logo:hover {
+    color: #0056b3;
+}
+
+.header-login .login-button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header-login .login-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
