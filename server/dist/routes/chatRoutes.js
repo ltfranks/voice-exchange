@@ -1,10 +1,8 @@
-// chatRoutes.ts
 import express from 'express';
 import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
 dotenv.config();
 const router = express.Router();
-// Configure OpenAI API client
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
@@ -24,7 +22,7 @@ router.post('/', async (req, res) => {
                 { role: 'system', content: 'You are a helpful assistant.' },
                 { role: 'user', content: message },
             ],
-            model: 'gpt-3.5-turbo', // Use your preferred model
+            model: 'gpt-3.5-turbo', // any model
         });
         res.json({ reply: response.choices[0]?.message?.content });
     }
