@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                 </ul>
             </nav>
             <div className="header-login">
-                <button className="login-button">Login</button>
+                <Link to="/login" className="login-button">Login</Link>
             </div>
         </header>
     );

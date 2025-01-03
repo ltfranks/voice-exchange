@@ -9,7 +9,7 @@ const openai = new OpenAI({
 });
 
 // GET /chat - Health check or info route
-router.get('/', (req: Request, res: Response): void => {
+router.get('', (req: Request, res: Response): void => {
     res.send('Chat endpoint is live! Use POST to send messages.');
 });
 router.post('/', async (req: Request, res: Response): Promise<void> => {

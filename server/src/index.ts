@@ -25,7 +25,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Use the chat routes
-app.use('api/chat', chatRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Start the server
 const PORT = 8080;
